@@ -1,6 +1,24 @@
 module Ex1 (uncons, wrap, unwrap, single)
 where
 
+-- Excercise 1.1
+-- maximum :: Ord a => [a] -> Maybe a
+-- take :: Num -> [a] -> [a]
+-- takeWhile :: (a -> Bool) -> [a] -> [a]
+-- inits ::
+-- splitAt :: Num -> [a] -> ([a], [a])
+-- null :: [a] -> Bool
+-- elem :: a -> [a] -> Bool
+-- zipWith :: [a] -> [b] -> [(a, b)]
+-- minimum :: Ord a => [a] -> Maybe a
+-- drop :: Num -> [a] -> [a]
+-- dropWhile :: (a -> Bool) -> [a] -> [a]
+-- tails
+-- span
+-- all :: (a -> Bool) -> [a] -> Bool
+-- (!!) :: [a] -> Num -> a
+
+
 -- Excercise 1.2
 uncons :: [a] -> Maybe (a, [a])
 uncons [] = Nothing
