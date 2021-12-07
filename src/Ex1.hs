@@ -1,4 +1,4 @@
-module Ex1 (uncons, wrap, unwrap, single)
+module Ex1 (uncons, wrap, unwrap, single, takeWhile')
 where
 
 -- Excercise 1.1
@@ -46,4 +46,15 @@ map f = foldr ((:) . f) []
 
 filter :: (a -> Bool) -> [a] -> [a]
 filter p = foldr cond [] where cond x xs = if p x then x:xs else xs
+
+-- Excersise 1.6
+-- foldr f e . filter p
+-- (foldr (+) 0 . filter even) [1, 2, 3, 4]
+-- foldr g e where g a b = if p a then f a b else b
+
+-- Excercise 1.7
+takeWhile' :: (a -> Bool) -> [a] -> [a]
+takeWhile' p =
+    foldr f []
+    where f x ys = if p x then x:ys else []
 
